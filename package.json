@@ -1,0 +1,19 @@
+{
+  "name": "siddi",
+  "version": "1.0.0",
+  "description": "--- title: Flask description: A popular minimal server framework for Python tags:   - python   - flask ---",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dom-parser": "^1.1.5"
+  },
+  "devDependencies": {
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

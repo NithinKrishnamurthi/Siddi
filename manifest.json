@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "Siddi",
+    "version": "1.0",
+    "description": "Bookmark links to figure out when they go on sale",
+    "permissions": [
+      "tabs",
+      "activeTab",
+      "storage",
+      "alarms"
+    ],
+    "background": {
+      "service_worker": "dist/background.bundle.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "web_accessible_resources": [
+        {
+          "resources": ["images/coupon-16.png"],
+          "matches": ["<all_urls>"]
+        }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/coupon-16.png",
+        "48": "images/coupon-48.png",
+        "128": "images/coupon-128.png"
+      }
+    },
+    "icons": {
+      "16": "images/coupon-16.png",
+      "48": "images/coupon-48.png",
+      "128": "images/coupon-128.png"
+    }
+  }
